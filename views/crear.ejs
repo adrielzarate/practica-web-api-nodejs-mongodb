@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nodepop</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Nodepop</h1>
+
+    <nav>
+      <ul>
+        <li>
+            <a href="/">Home</a>
+            <a href="/tags">Ver todos los tags</a>
+            <a href="/crear">Crear Anuncio</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+        <h2>Crear anuncio</h2>
+        <form action="/crear" method="POST">
+          <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre">
+          </div>
+          <br>
+          <div>
+            <label for=""> Se
+              <input type="radio" name="venta" value="true" checked> Vende
+              <input type="radio" name="venta" value="false"> Busca
+            </label>
+          </div>
+          <br>
+          <div>
+            <label for="precio">Precio</label>
+            <input type="number" name="precio">
+          </div>
+          <br>
+          <div>
+            <label for="foto">Foto</label>
+            <input name="foto" type="file">
+          </div>
+          <br>
+          <div>
+            <label for="nombre">Tags</label>
+            <input type="text" name="tag"> <button>Agregar otro tag</button> <br>
+            tags: <input class="input--disabled" type="text" name="tags" placeholder="Aqui iran los tags">
+          </div>
+          <br>
+          <button id="btnCrearAnuncio">Crear</button>
+        </form>
+    </main>
+
+  <script src="/javascripts/scripts/js"></script>
+  </body>
+</html>

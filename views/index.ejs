@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nodepop</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Nodepop</h1>
+
+    <nav>
+      <ul>
+        <li>
+            <a href="/">Home</a>
+            <a href="/tags">Ver todos los tags</a>
+            <a href="/crear">Crear Anuncio</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+        <h2>Anuncios</h2>
+        <ul>
+          <% anuncios.forEach( anuncio => {%>
+            <li>
+              <p><strong><%= `${anuncio.nombre}`  %></strong></p>
+              <p>Se
+                <% if (anuncio.venta) { %>
+                  <strong>Vende</strong>
+                <% } else { %>
+                  <strong>Busca</strong>
+                <% } %>
+              </p>
+              <p>Precio: <strong>$<%= `${anuncio.precio}`  %></strong></p>
+              <p><img src="/images/<%= `${anuncio.foto}`  %>" width="250" height="200" ></p>
+              <p>Tags: <strong><%= `${anuncio.tags}`  %></strong></p>
+            </li>
+          <%}); %>
+        </ul>
+    </main>
+
+    <aside>
+      <h2>Filtros</h2>
+
+        <form action="/" method="GET">
+
+          <div>
+            <label for="nombre">Tags</label>
+            <br>
+            <% tags.forEach( tag => {%>
+                <input type="radio" name="tags" value="<%= `${tag}`  %>"> <%= `${tag}`  %>
+            <%}); %>
+          </div>
+
+          <br>
+
+          <div>
+            <label for=""> Se
+              <input type="radio" name="venta" value="true"> Vende
+              <input type="radio" name="venta" value="false"> Busca
+            </label>
+          </div>
+
+          <br>
+
+          <div>
+            <label for="nombre">Precio</label><br>
+            mayor que: <input type="number" name="gt"><br>
+            nenor que: <input type="number" name="lt">
+          </div>
+
+          <br>
+
+          <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre">
+          </div>
+
+          <br>
+
+          <button>Reset</button>
+          <button>Filtrar</button>
+        </form>
+
+    </aside>
+
+  </body>
+</html>

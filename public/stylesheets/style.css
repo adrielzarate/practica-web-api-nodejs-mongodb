@@ -1,0 +1,28 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+main, aside {
+    width: 48%;
+    float: left;
+}
+
+main {
+    width: 60%;
+}
+
+aside {
+    width: 40%;
+}
+
+.input--disabled {
+    border: none;
+    box-shadow: none;
+}
+
