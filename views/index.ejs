@@ -47,7 +47,7 @@
             <label for="nombre">Tags</label>
             <br>
             <% tags.forEach( tag => {%>
-                <input type="radio" name="tags" value="<%= `${tag}`  %>"> <%= `${tag}`  %>
+                <input type="radio" name="tags" value="<%= `${tag}`  %>"> <%= `${tag}`  %> <br>
             <%}); %>
           </div>
 
@@ -65,7 +65,7 @@
           <div>
             <label for="nombre">Precio</label><br>
             mayor que: <input type="number" name="gt"><br>
-            nenor que: <input type="number" name="lt">
+            menor que: <input type="number" name="lt">
           </div>
 
           <br>

@@ -19,10 +19,10 @@
 
     <main>
         <h2>Crear anuncio</h2>
-        <form action="/crear" method="POST">
+        <form action="/crear" enctype="multipart/form-data" method="post">
           <div>
             <label for="nombre">Nombre</label>
-            <input type="text" name="nombre">
+            <input type="text" name="nombre" required>
           </div>
           <br>
           <div>
@@ -34,24 +34,26 @@
           <br>
           <div>
             <label for="precio">Precio</label>
-            <input type="number" name="precio">
+            <input type="number" name="precio" required>
           </div>
           <br>
           <div>
             <label for="foto">Foto</label>
-            <input name="foto" type="file">
+            <input name="foto-file" type="file" required>
+            <input name="foto" type="hidden">
           </div>
           <br>
           <div>
             <label for="nombre">Tags</label>
-            <input type="text" name="tag"> <button>Agregar otro tag</button> <br>
-            tags: <input class="input--disabled" type="text" name="tags" placeholder="Aqui iran los tags">
+            <input id="tagInput" type="text" name="tag">
+            <button id="addTagBtn">Agregar otro tag</button> <br><br>
+            tags: <input id="tagsInput" type="text" name="tags" placeholder="Aqui iran los tags" required>
           </div>
           <br>
-          <button id="btnCrearAnuncio">Crear</button>
+          <button>Crear</button>
         </form>
     </main>
 
-  <script src="/javascripts/scripts/js"></script>
+  <script src="/javascripts/scripts.js"></script>
   </body>
 </html>

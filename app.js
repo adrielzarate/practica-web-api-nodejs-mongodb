@@ -8,6 +8,8 @@ var bodyParser = require('body-parser');
 require('./lib/connectMongoose');
 require('./models/Anuncio');
 
+global.appRoot = path.resolve(__dirname);
+
 var app = express();
 
 // view engine setup
