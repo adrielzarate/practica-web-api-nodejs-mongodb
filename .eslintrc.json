@@ -1,11 +1,17 @@
 {
-    "env": {
-        "browser": true,
+    "env":
+    {
+        "node": true,
         "commonjs": true,
         "es6": true
     },
+    "parserOptions":
+    {
+        "ecmaVersion": 2017
+    },
     "extends": "eslint:recommended",
-    "rules": {
+    "rules":
+    {
         "indent": [
             "error",
             "tab"
@@ -16,11 +22,23 @@
         ],
         "quotes": [
             "error",
-            "double"
+            "single"
         ],
         "semi": [
             "error",
             "always"
+        ],
+        "strict": [
+            "error",
+            "global"
+        ],
+        "no-unused-vars": [
+            "error",
+            {
+                "vars": "all",
+                "args": "after-used",
+                "argsIgnorePattern": "next"
+            }
         ]
     }
 }
