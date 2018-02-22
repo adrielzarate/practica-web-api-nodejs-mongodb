@@ -11,7 +11,7 @@ nodepop
 ```
     $ npm run install_db
 ```
-3. lanzar aplicacion en modo debug
+3. Lanzar aplicacion en modo debug
 ```
     $ npm run dev
 ```
@@ -19,7 +19,7 @@ nodepop
 ```
     $ npm run eslint folder/file.js
 ```
-5. lanzar applicacion
+5. Lanzar applicacion
 ```
     $ npm start
 ```
