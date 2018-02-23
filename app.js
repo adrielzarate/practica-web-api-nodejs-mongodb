@@ -30,6 +30,7 @@ app.use(function(request, response, next) {
 app.use('/', require('./routes/index'));
 app.use('/tags', require('./routes/tags'));
 app.use('/crear', require('./routes/crear'));
+app.use('/api', require('./routes/api'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
