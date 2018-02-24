@@ -15,11 +15,11 @@ nodepop
 ```
     $ mongo
 ```
-4. Si se quiere empezar al aplicacion con algunos datos precargados en la base de datos, hacemos desde la terminal de la aplicacion
+4. Si se quiere empezar con algunos datos precargados en la base de datos, hacemos (desde la terminal de la aplicacion)
 ```
     $ npm run install_db
 ```
-5. Lanzamos aplicacion
+5. Lanzamos Nodepop
 ```
     $ npm start
 ```
@@ -27,7 +27,7 @@ o en modo debug
 ```
     $ npm run dev
 ```
-6. La direccion de la aplicacion es [http://localhost:3000](http://localhost:3000)
+6. La aplicacion corre en [http://localhost:3000](http://localhost:3000)
 
 7. Para checkear la calidad de los scripts con ESLint
 ```
@@ -36,11 +36,11 @@ o en modo debug
 
 ## Instrucciones para ver la documentacion de la API
 
-Con la Nodepop corriendo ...
+Con Nodepop corriendo ...
 
 1. La primera vez, debemos instalar las dependencias propias de la documentacion
 ```
-    $ cd iodocs
+    $ cd doc
     $ npm install
 ```
 
@@ -54,7 +54,7 @@ Con la Nodepop corriendo ...
     $ npm start
 ```
 
-6. La direccion de la documentacion es [http://localhost:3001](http://localhost:3001)
+6. La documentacion corre en [http://localhost:3001](http://localhost:3001)
 
 7. Login
 ```

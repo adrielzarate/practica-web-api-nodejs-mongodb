@@ -1,0 +1,3 @@
+[submodule "practica-web-api-nodejs-mongodb"]
+	path = practica-web-api-nodejs-mongodb
+	url = https://github.com/adrielzarate/practica-web-api-nodejs-mongodb/

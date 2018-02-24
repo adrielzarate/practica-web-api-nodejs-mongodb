@@ -1,0 +1,150 @@
+{
+    "name": "Nodepop API",
+    "version": "1.0",
+    "title": "Nodepop API",
+    "description": "API de consulta y creacion de anuncios",
+    "protocol": "rest",
+    "basePath": "http://localhost:3000",
+    "resources": {
+        "Nodepop API": {
+            "methods": {
+                "getNombre": {
+                    "name": "Por Nombre",
+                    "description": "Este metodo obtiene anuncios que coincidan con el nombre completo o seccion del nombre",
+                    "httpMethod": "GET",
+                    "path": "/api",
+                    "parameters": {
+                        "nombre": {
+                            "default": "Bicicleta",
+                            "description": "Un anuncio con el nombre especificado",
+                            "location": "path",
+                            "required": true,
+                            "type": "string"
+                        }
+                    }
+                },
+                "getTags": {
+                    "name": "Listado de tags",
+                    "description": "Este metodo obtiene el listado de tags existentes",
+                    "httpMethod": "GET",
+                    "path": "/api/tags"
+                },
+                "isVenta": {
+                    "name": "Venta/Busqueda",
+                    "description": "Este metodo obtiene anuncios que se venden o se buscan",
+                    "httpMethod": "GET",
+                    "path": "/api",
+                    "parameters": {
+                        "venta": {
+                            "default": "true",
+                            "description": "Un anuncio que esta a la venta",
+                            "location": "path",
+                            "required": true,
+                            "type": "boolean"
+                        }
+                    }
+                },
+                "byTag": {
+                    "name": "Por Tag",
+                    "description": "Este metodo obtiene anuncios que coinciden con una etiqueta",
+                    "httpMethod": "GET",
+                    "path": "/api",
+                    "parameters": {
+                        "tags": {
+                            "default": "motor",
+                            "description": "Un anuncio que posee esa categoria",
+                            "location": "path",
+                            "required": true,
+                            "type": "string"
+                        }
+                    }
+                },
+                "lowerThan": {
+                    "name": "Menor Que",
+                    "description": "Este metodo obtiene anuncios que tienen un precio menor al especificado",
+                    "httpMethod": "GET",
+                    "path": "/api",
+                    "parameters": {
+                        "lt": {
+                            "default": "200",
+                            "description": "Un anuncio con el precio menor al especificado",
+                            "location": "path",
+                            "required": true,
+                            "type": "number"
+                        }
+                    }
+                },
+                "greaterThan": {
+                    "name": "Mayor Que",
+                    "description": "Este metodo obtiene anuncios que tienen un precio mayor al especificado",
+                    "httpMethod": "GET",
+                    "path": "/api",
+                    "parameters": {
+                        "gt": {
+                            "default": "200",
+                            "description": "Un anuncio con el precio mayor al especificado",
+                            "location": "path",
+                            "required": true,
+                            "type": "number"
+                        }
+                    }
+                },
+                "nuevoAnuncio": {
+                    "name": "Nuevo Anuncio",
+                    "description": "Crea un anuncio a partir de los parametros especificados",
+                    "httpMethod": "POST",
+                    "path": "/crear",
+                    "parameters": {
+                        "Content-Type": {
+                            "type": "string",
+                            "required": "true",
+                            "description": "Content type of the payload",
+                            "default": "application/json",
+                            "location": "header"
+                        },
+                        "nombre": {
+                            "default": "Bike",
+                            "description": "El nombre del anuncio a cargar",
+                            "required": true,
+                            "title": "nombre",
+                            "type": "string",
+                            "location": "body"
+                        },
+                        "venta": {
+                            "default": "true",
+                            "description": "Especifica si el producto esta a la venta (true) o se busca (false). ",
+                            "required": true,
+                            "title": "venta",
+                            "type": "boolean",
+                            "location": "body"
+                        },
+                        "precio": {
+                            "default": "200",
+                            "description": "El precio del anuncio",
+                            "required": true,
+                            "title": "precio",
+                            "type": "number",
+                            "location": "body"
+                        },
+                        "foto": {
+                            "default": "/images/bici.jpg",
+                            "description": "La direccion para llegar a la foto del anuncio",
+                            "required": true,
+                            "title": "foto",
+                            "type": "string",
+                            "location": "body"
+                        },
+                        "tags": {
+                            "default": "lifestyle",
+                            "description": "La o las tags que se asocian al anuncio",
+                            "required": true,
+                            "title": "tags",
+                            "type": "string",
+                            "location": "body"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
