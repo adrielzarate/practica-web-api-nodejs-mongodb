@@ -19,7 +19,7 @@ o en modo debug
 ```
     $ npm run dev
 ```
-4. La direccion de la aplicacion es http://localhost:3000](http://localhost:3000)
+4. La direccion de la aplicacion es [http://localhost:3000](http://localhost:3000)
 
 5. Para checkear la calidad de los scripts con ESLint
 ```
