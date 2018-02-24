@@ -49,7 +49,7 @@ Con Nodepop corriendo ...
     $ redis-server
 ```
 
-3. Lanzamos la aplicacion desde el directorio de iodocs
+3. Lanzamos la aplicacion desde el directorio de la documentacion
 ```
     $ npm start
 ```
