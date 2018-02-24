@@ -19,10 +19,8 @@ o en modo debug
 ```
     $ npm run dev
 ```
-4. La direccion de la aplicacion es
-```
-    [http://localhost:3000](http://localhost:3000)
-```
+4. La direccion de la aplicacion es http://localhost:3000](http://localhost:3000)
+
 5. Para checkear la calidad de los scripts con ESLint
 ```
     $ npm run eslint ejemplo-directorio/archivo-scripts.js
@@ -48,10 +46,7 @@ Con la Nodepop corriendo ...
     $ npm start
 ```
 
-6. La direccion de la documentacion es
-```
-    [http://localhost:3001](http://localhost:3001)
-```
+6. La direccion de la documentacion es [http://localhost:3001](http://localhost:3001)
 
 7. Login
 ```
