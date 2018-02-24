@@ -23,7 +23,7 @@ router.get('/', (req, res) => {
 router.post('/', upload.single('foto-file'), (req, res, next) => {
 
 	const data = req.body;
-	data.foto = req.file.filename;
+	// data.foto = req.file.filename;
 	data.tags = req.body.tags.split(',');
 
 	const anuncio = new Anuncio(data);

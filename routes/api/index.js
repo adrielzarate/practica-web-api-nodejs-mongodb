@@ -50,4 +50,14 @@ router.get('/', async (req, res, next) => {
     }
 });
 
+router.get('/tags', async (req, res, next) => {
+    try {
+        const getTags = await Anuncio.distinct('tags');
+        res.json({success: true, result: getTags});
+    } catch(err) {
+        next(err);
+        return;
+    }
+});
+
 module.exports = router;
