@@ -7,11 +7,19 @@ nodepop
 ```
     $ npm install
 ```
-2. Si se quiere empezar al aplicacion con algunos datos precargados en la base de datos
+2. En otra terminal levantamos mongod
+```
+    $ mongod
+```
+3. Y en otra mongo
+```
+    $ mongo
+```
+4. Si se quiere empezar al aplicacion con algunos datos precargados en la base de datos, hacemos desde la terminal de la aplicacion
 ```
     $ npm run install_db
 ```
-3. Lanzamos aplicacion
+5. Lanzamos aplicacion
 ```
     $ npm start
 ```
@@ -19,9 +27,9 @@ o en modo debug
 ```
     $ npm run dev
 ```
-4. La direccion de la aplicacion es [http://localhost:3000](http://localhost:3000)
+6. La direccion de la aplicacion es [http://localhost:3000](http://localhost:3000)
 
-5. Para checkear la calidad de los scripts con ESLint
+7. Para checkear la calidad de los scripts con ESLint
 ```
     $ npm run eslint ejemplo-directorio/archivo-scripts.js
 ```
